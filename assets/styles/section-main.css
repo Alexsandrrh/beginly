@@ -58,3 +58,30 @@
 	}
 
 }
+
+
+@media screen and (min-width: 768px) {
+	.section-main {
+		padding: 50px 0;
+	}
+
+	.flex-section-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+
+	.section-m-poster {
+		width: 50%;
+		margin-left: auto;
+	}
+
+	.section-m-content {
+		font-size: 34px;
+	}
+
+	.section-m-content span {
+		font-size: 32px;
+	}
+}

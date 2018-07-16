@@ -25,6 +25,7 @@
 	.sign {
 		outline: none;
 		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
 		font-weight: 600;
 		text-transform: uppercase;
 		margin: 0 5px;
@@ -42,4 +43,29 @@
 		border-color: #d1deee;
 		color: #4076ba;
 	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.mobile-menu {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 60px;
+	}
+
+	.logo {
+		height: 55px;
+	}
+
+
+	.sign {
+		padding: 10px 15px;
+		cursor: pointer;
+	}
+
 }

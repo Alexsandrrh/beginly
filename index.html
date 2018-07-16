@@ -24,8 +24,8 @@
         <div class="container">
             <div class="desktop-menu">
                 <img src="assets/img/logo.svg" alt="" class="logo">
-                <button class="js-signup signup">Регистрация</button>
-                <button class="js-login login">Вход</button>
+                <a href="signup/index.html" class="js-signup signup sign">Регистрация</a>
+                <a href="login/index.html" class="js-login login sign">Вход</a>
             </div>
             <div class="mobile-menu">
                 <img src="assets/img/icon.svg" alt="" class="logo">
@@ -34,8 +34,8 @@
                     <i></i>
                     <i></i>
                 </div>
-                <button class="js-signup signup sign">Регистрация</button>
-                <button class="js-login login sign">Вход</button>
+                <a href="signup/index.html" class="js-signup signup sign">Регистрация</a>
+                <a href="login/index.html" class="js-login login sign">Вход</a>
             </div>
         </div>
     </header>
@@ -45,11 +45,13 @@
         <div class="container">
             <div class="flex-section-main">
                 <img src="assets/img/main.png" class="section-m-poster">
-                <p class="section-m-content">Находим работу подходящая<br><span>под ваши таланты</span></p>
-                <p class="section-m-title">Мы поможем вам найти надёжную работу</p>
+                <div class="block">
+                    <p class="section-m-content">Находим работу подходящая<br><span>под ваши таланты</span></p>
+                    <p class="section-m-title">Мы поможем вам найти надёжную работу</p>
                 <div class="section-m-links">
                     <a href="" class="section-m-link">Для школьников</a>
                     <a href="" class="section-m-employer">Для работодателей</a>
+                </div>
                 </div>
             </div>
         </div>
@@ -71,7 +73,7 @@
                 </div>
 
                 <div class="section-a-block">
-                    <img src="assets/img/about3.png" alt="" class="a-block-poster">
+                    <img src="assets/img/about3.svg" alt="" class="a-block-poster">
                     <h3 class="a-block-headline">03. Начинаешь работать</h3>
                 </div>
             </div>
@@ -106,9 +108,11 @@
     <section class="section-signup">
         <div class="container">
             <div class="flex-section-signup">
-                <img src="assets/img/end.png" class="section-s-poster">
-                <h3 class="section-s-headline">Вы ищите работу?<br>Пропробуйте с <span>Бегинли</span></h3>
-                <button class="section-s-btn">Искать работу</button>
+                <img src="assets/img/end.svg" class="section-s-poster">
+                <div class="block-center">
+                    <h3 class="section-s-headline">Вы ищите работу?<br>Пропробуйте вместе с <span>Бегинли</span></h3>
+                    <button class="section-s-btn">Начать поиск работы</button>
+                </div>
             </div>
         </div>
     </section>
@@ -117,16 +121,26 @@
     <footer class="footer">
         <div class="container">
             <div class="flex-footer">
-                <h4 class="footer-headline">Информация</h4>
+                <div class="block-center">
+                    <h4 class="footer-headline">Информация</h4>
                 <ul class="footer-nav">
                     <li><a href="">Служба поддержки</a></li>
                     <li><a href="">Privacy policy</a></li>
                 </ul>
-                <h4 class="footer-headline">Компания</h4>
+                </div>
+
+                <div class="block-center">
+                    <h4 class="footer-headline">Компания</h4>
                 <ul class="footer-nav">
                     <li><a href="">О нас</a></li>
                     <li><a href="">Контакты</a></li>
                 </ul>
+                </div>
+                <div class="block-center">
+                    <ul class="footer-nav">
+                        <li style="margin: 10px 0;"><a href=""><img src="assets/img/googleplay.png" alt=""></a></li> 
+                    </ul>
+                </div>
             </div>
             <div class="footer-text">
                 <p>Beginly 2018. All rights reserved.</p>

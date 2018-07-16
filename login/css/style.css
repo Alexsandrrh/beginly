@@ -25,6 +25,11 @@ ul {
 	list-style-type: none;
 }
 
+input {
+	margin: 0;
+	padding: 0;
+}
+
 .block-center {
 	margin: 0 auto;
 }

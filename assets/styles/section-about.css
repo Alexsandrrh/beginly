@@ -37,3 +37,22 @@
 
 	
 }
+
+
+@media screen and (min-width: 768px) {
+	.section-about {
+		padding: 50px 0;
+	}
+
+
+	.flex-section-about {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.section-a-headline {
+		font-size: 28px;
+	}
+}

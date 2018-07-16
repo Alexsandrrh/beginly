@@ -1,0 +1,148 @@
+@media screen and (min-width: 320px) {
+	.desktop-sign {
+		display: none;	
+	}
+
+	.section-sign {
+		height: calc(100vh - 50px);
+	}
+
+	.form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.form-name {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 800;
+		margin: 20px 0 4px;
+		color: #2a2e34;
+	}
+
+	.form-headline {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 800;
+		font-size: 16px;
+		color: #2a2e34;
+		margin-bottom: 20px; 
+	}
+
+	.line {
+		width: 80%;
+		height: 2px;
+		background: rgba(0, 0, 0, .3);
+		margin: 0 0 20px;
+	}
+
+
+	.input-form {
+		font-family: 'Roboto', sans-serif;
+		margin: 5px 0;
+	}
+
+	.checkbox-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0 5px;
+	}
+
+	.checkbox-form label{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		text-align: left;
+		font-size: 13px;
+		margin-left: 5px;
+		color: #555;
+	}
+
+	.input-form p {
+		font-weight: 700;
+		text-align: left;
+		font-size: 15px;
+		color: #2362af;
+		opacity: .9;
+	}
+
+	.input-form input {
+		font-family: 'Roboto', sans-serif;
+		width: 240px;
+		height: 35px;
+		border: 1px solid rgba(0, 0, 0, .25);
+		border-radius: 3px;
+		padding: 5px 10px;
+	}
+
+	.form-btn {
+		font-family: 'Roboto', sans-serif;
+		font-size: 17px;
+		font-weight: 700;
+		color: #fff;
+		background: #0f2d52;
+		border-radius: 25px;
+		width: 160px;
+		margin: 15px 0;
+		border: none;
+		padding: 10px 15px;
+		opacity: .9;
+	}
+
+	.form-help {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		margin: 10px 0;
+	}
+
+	.form-sign-to {
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.4);
+		width: 90%;
+		margin: 15px 0;
+	}
+
+	.form-sign-to p {
+		font-size: 19px;
+		font-weight: 800;
+		color: #333;
+	}
+
+	.form-sign-to a {
+		font-size: 17px;
+		font-weight: 700;
+		color: #2362af;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.section-sign {
+		height: auto;
+	}
+
+	.flex-section-sign {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form {
+		width: 35%;
+		margin-right: auto;
+	}
+
+	.desktop-sign {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.desktop-sign img {
+		width: 110%;
+	}
+
+}
