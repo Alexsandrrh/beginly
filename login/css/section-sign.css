@@ -79,7 +79,7 @@
 		font-family: 'Roboto', sans-serif;
 		font-size: 17px;
 		font-weight: 700;
-		color: #fff;
+		color: #64cdf2;
 		background: #0f2d52;
 		border-radius: 25px;
 		width: 160px;
@@ -87,6 +87,7 @@
 		border: none;
 		padding: 10px 15px;
 		opacity: .9;
+		cursor: pointer;
 	}
 
 	.form-help {
