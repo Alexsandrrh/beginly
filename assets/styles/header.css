@@ -1,0 +1,45 @@
+@media screen and (min-width: 320px) {
+	.header {
+		padding: 5px 0;
+/*		-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.3);
+		box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.3);*/
+	}
+
+	.mobile-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+	}
+
+	.desktop-menu {
+		display: none;
+	}
+
+	.logo {
+		height: 40px;
+		margin-right: auto;
+	}
+
+	.sign {
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: 0 5px;
+		padding: 5px 10px;
+		border: 2px solid #e9ecf1;
+		border-radius: 25px;
+		background: none;
+	}
+
+	.signup {
+		color: #999da2;
+	}
+
+	.login {
+		border-color: #d1deee;
+		color: #4076ba;
+	}
+}
