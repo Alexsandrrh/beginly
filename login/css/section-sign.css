@@ -76,11 +76,12 @@
 	}
 
 	.form-btn {
+		text-align: center;
 		font-family: 'Roboto', sans-serif;
 		font-size: 17px;
 		font-weight: 700;
 		color: #fff;
-		background: #0f2d52;
+		background: linear-gradient(to left, #0073fe, #3a8df2);
 		border-radius: 25px;
 		width: 160px;
 		margin: 15px 0;

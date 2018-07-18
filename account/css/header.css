@@ -1,0 +1,130 @@
+@media screen and (min-width: 320px) {
+	.header {
+		padding: 10px 0 5px;
+	}
+
+	.headhesive {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 10px 0;
+		height: 50px;
+		transform: translateY(-100%);
+		transition: .1s ease-out;
+		z-index: 5;
+		background: linear-gradient(to left, #0073fe, #3a8df2);
+		box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.26);
+	}
+
+	.headhesive .logo {
+		height: 30px;
+	}
+
+	.headhesive .photo-user {
+		width: 30px;
+		height: 30px;
+	}
+
+	.headhesive .flex-header a {
+		font-size: 13px;
+	}
+
+	.headhesive--stick {
+		transform: translateY(0);
+	}
+
+	.flex-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo {
+		height: 40px;
+		margin-right: auto;
+	}
+
+	.name-user {
+		display: none;
+	}
+
+	.photo-user {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.flex-header a {
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-left: 10px;
+		border-radius: 25px;
+		background: none;
+		color: #ffffff;
+	}
+
+	.semicircle {
+		width: 100%;
+		height: 220px;
+		background: linear-gradient(to left, #0073fe, #3a8df2);
+		border-radius: 0 0 35px 35px;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.logo {
+		height: 50px;
+	}
+
+	.name-user {
+		display: block;
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+		font-size: 19px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-left: 10px;
+		border-radius: 25px;
+		background: none;
+		color: #ffffff;
+	}
+
+	.photo-user {
+		width: 50px;
+		height: 50px;
+	}
+
+	.flex-header a {
+		font-size: 15px;
+		margin-left: 20px;
+	}
+
+	.headhesive {
+		height: 60px;
+	}
+
+	.headhesive .logo {
+		height: 40px;
+	}
+
+	.headhesive .photo-user {
+		width: 40px;
+		height: 40px;
+	}
+
+	.headhesive .flex-header a {
+		font-size: 14px;
+	}
+
+	.semicircle {
+		height: 280px;
+		border-radius:0 0 40% 40%;
+	}
+
+
+}

@@ -28,3 +28,52 @@ ul {
 .block-center {
 	margin: 0 auto;
 }
+
+button, input {
+	outline: none;
+	border: none;
+}
+
+.flex {
+	display: flex;
+	width: 100%;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-start {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.flex-end {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
