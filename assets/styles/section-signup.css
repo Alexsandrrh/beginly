@@ -10,11 +10,12 @@
 		font-weight: 800;
 		color: #333;
 		margin: 15px 0;
+
 	}
 
 	.section-s-headline span {
 		font-size: 28px;
-		color: #2a67b1;
+		color: #4CB6F8;
 	}
 
 	.section-s-btn {
@@ -22,11 +23,11 @@
 		font-weight: 700;
 		font-size: 20px;
 		border-radius: 30px;
-		margin: 5px 0;
+		margin: 15px 0 0;
 		padding: 10px 15px;
-		background: #0f2d52;
-		color: #fff;
-		border: 2px solid #0f2d52;
+		background: #ffffff;
+		color: #0f2d52;
+		border: 3px solid #0f2d52;
 	}
 
 

@@ -218,15 +218,15 @@
 
     .vacancy-call {
         color: #ffffff;
-        background: #002463;
+        background: #2388f8;
         padding: 6px 11px;
         opacity: .9;
     }
 
     .vacancy-more {
-        border: 2px solid #002463;
+        border: 2px solid #2388f8;
         padding: 4px 9px;
-        color: #002463;
+        color: #2388f8;
     }
 }
 
