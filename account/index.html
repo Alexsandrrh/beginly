@@ -70,7 +70,7 @@
                         <div class="block-column">
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
+                                    <input type="checkbox" class="checkbox-input" onclick="CheckedFunc()">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Вахтовый метод</p>
@@ -123,10 +123,20 @@
                                 </label>
                                 <p>Любой</p>
                             </div>
-
-
                         </div>
+
                     </div>
+
+                    <div class="param-skill-block">
+                        <h3 class="params-section-name">Опыт работы</h3>
+                        <select class="select-skill" id="">
+                            <option value="">Не имеет значения</option>
+                            <option value="">Более 1 года</option>
+                            <option value="">Более 3 лет</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-release">Показать</button>
                 </div>
                 <div class="vacancies">
 
@@ -235,12 +245,10 @@
     <script src="../assets/scripts/lib/headhesive.min.js"></script>
     <script type="text/javascript">
         let options = {
-            offset: 200
+            offset: 80
         }
         let header = new Headhesive('.header', options);
     </script>
-    <script>
-        if($(''))
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

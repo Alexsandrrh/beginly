@@ -4,7 +4,137 @@
     }
 
     .params-block {
+        position: fixed;
+        top: 0;
+        right: 10px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 6px 17px 0px rgba(50, 50, 50, 0.39);
+        border-radius: 15px;
+        padding: 15px;
+        background: #ffffff;
+        z-index: 5;
+        transition: .3s ease-out;
+        transform: translateX(-150%);
+    }
+
+    .params-block.-active {
+        transform: translateX(0);
+    }
+
+    .vacancies.-active  {
+        transform: translateY(560px);
+    }
+
+    .params-section-name {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+
+    .param-price-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .price-input {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .price-input input {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 6px;
+        width: 90px;
+        border: 2px solid #666;
+        border-radius: 3px;
+        margin-right: 15px;
+    }
+
+    .price-input input:focus {
+        border-color: #222;
+    }
+
+    .schedule-block {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+    }
+
+    .schedule-block p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #b7bdc5;
+    }
+
+    .checkbox {
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .checkbox-input {
         display: none;
+    }
+
+    .checkedbox {
+        position: relative;
+        display: block;
+        height: 20px;
+        width: 20px;
+        border: 2px solid #333;
+        border-radius: 5px;
+    }
+
+    .checkedbox:before {
+        position: absolute;
+        content: "";
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background: #333;
+        transform: scale(0);
+        transition: .3s;
+        border-radius: 2px;
+    }
+
+    .checkbox-input[type="checkbox"]:checked + i:before {
+        transform: scale(1);
+    }
+
+    .select-skill {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        height: 42px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #666666;
+        margin-bottom: 20px;
+        padding: 5px;
+        border: 2px solid #777;
+        border-radius: 3px;
+    }
+
+    .btn-release {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 10px 0;
+        color: #ffffff;
+        border: none;
+        background: #4CB6F8;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .vacancies {
@@ -12,6 +142,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        transition: .3s ease-out;
     }
 
     .vacancy {
@@ -115,6 +246,7 @@
     /* params */
 
     .params-block {
+        position: unset;
         display: flex;
         flex-direction: column;
         width: 35%;
@@ -124,6 +256,7 @@
         border-radius: 15px;
         padding: 15px;
         background: #ffffff;
+        transform: translateX(0);
     }
 
     .params-section-name {
@@ -166,12 +299,12 @@
     .schedule-block {
         display: flex;
         flex-direction: row;
-        margin: 8px 0;
+        margin: 10px 0;
     }
 
     .schedule-block p {
         font-family: 'Roboto', sans-serif;
-        font: 16px;
+        font-size: 16px;
         font-weight: bold;
         color: #b7bdc5;
     }
@@ -211,8 +344,32 @@
         transform: scale(1);
     }
 
+    .select-skill {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        height: 42px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #666666;
+        margin-bottom: 20px;
+        padding: 5px;
+        border: 2px solid #777;
+        border-radius: 3px;
+    }
 
+    .btn-release {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 10px 0;
+        color: #ffffff;
+        border: none;
+        background: #4CB6F8;
+        border-radius: 8px;
+        cursor: pointer;
+    }
     .vacancies {
+        transform: translateY(0);
         width: 60%;
     }
 
