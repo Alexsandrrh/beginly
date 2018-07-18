@@ -163,8 +163,21 @@
         border-color: #222;
     }
 
+    .schedule-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .schedule-block p {
+        font-family: 'Roboto', sans-serif;
+        font: 15px;
+        font-weight: bold;
+        color: #b7bdc5;
+    }
+
     .checkbox {
         cursor: pointer;
+        margin-right: 10px;
     }
 
     .checkbox-input {
