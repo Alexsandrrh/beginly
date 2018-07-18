@@ -393,6 +393,10 @@
         border-radius: 8px;
     }
 
+    .vacancies.-active {
+        transform: translateY(0);
+    }
+
     .input-form-vacancy img {
         position: absolute;
         top: 7.5px;
