@@ -13,6 +13,10 @@
         margin: 0 auto;
     }
 
+    .main-poster-search {
+        display: none;
+    }
+
     .section-s-headline {
         display: none;
     }
@@ -42,26 +46,25 @@
 }
 
 @media screen and (min-width: 768px){
+    .section-search {
+        height: auto;
+        padding: 20px 0;
+    }
+
     .search-params {
         display: none;
     }
 
+    .main-poster-search {
+        display: block;
+    }
+
     .flex-section-search {
-        height: 200px;
+        height: 100%;
     }
 
     .input-form {
-        width: 65%;
-        margin: 25px 0 auto;
-    }
-
-    .input-form input {
-        height: 45px;
-        font-size: 16px;
-    }
-
-    .input-form img {
-        height: 35px;
+        display: none;
     }
 
     .section-s-headline {
