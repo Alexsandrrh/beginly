@@ -166,11 +166,12 @@
     .schedule-block {
         display: flex;
         flex-direction: row;
+        margin: 8px 0;
     }
 
     .schedule-block p {
         font-family: 'Roboto', sans-serif;
-        font: 15px;
+        font: 16px;
         font-weight: bold;
         color: #b7bdc5;
     }
