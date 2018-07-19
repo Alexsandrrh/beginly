@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/container.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+</head>
+<body>
+    <!-- start code -->
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="flex-header">
+                <a href="../" class="logo m-r flex flex-start"><img src="../assets/img/white.svg" class="logo"> <img
+                        src="../assets/img/lwhite.svg" class="logo" alt=""></a>
+                <a href="/account/user"><img src="../assets/img/2jJgQP2XQpY.jpg" class="photo-user"></a>
+                <h2 class="name-user">Привет, Александр</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- section-vacancy-info -->
+    <section class="section-vacancy">
+        <div class="container">
+            <div class="flex-section-vacancy">
+                <div class="employer"></div>
+                <div class="all-info"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex-footer">
+                <div class="block-center">
+                    <h4 class="footer-headline">Информация</h4>
+                    <ul class="footer-nav">
+                        <li><a href="">Служба поддержки</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="block-center">
+                    <h4 class="footer-headline">Компания</h4>
+                    <ul class="footer-nav">
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="block-center">
+                    <ul class="footer-nav">
+                        <li style="margin: 10px 0;"><a href=""><img src="../assets/img/googleplay.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p>Beginly 2018. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end code -->
+    <!-- scripts -->
+    <script src="../assets/scripts/lib/jquery-3.3.1.min.js"></script>
+    <script src="../assets/scripts/lib/headhesive.min.js"></script>
+    <script type="text/javascript">
+        let options = {
+            offset: 80
+        }
+        let header = new Headhesive('.header', options);
+    </script>
+    <script src="../assets/scripts/location.js"></script>
+
+</body>
+</html>

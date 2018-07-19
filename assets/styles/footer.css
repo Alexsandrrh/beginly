@@ -5,6 +5,10 @@
 		margin-top: 30px;
 	}
 
+	.footer.-active {
+		transform: translateY(560px);
+	}
+
 	.footer-headline {
 		font-family: 'Roboto', sans-serif;
 		font-size: 18px;
@@ -40,6 +44,10 @@
 @media screen and (min-width: 768px) {
 	.footer {
 		padding-top: 65px;
+	}
+
+	.footer.-active {
+		transform: translateY(0);
 	}
 
 	.footer-text {

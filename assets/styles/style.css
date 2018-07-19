@@ -32,6 +32,10 @@ ul {
 button, input {
 }
 
+.m-r {
+	margin-right: auto;
+}
+
 .flex {
 	display: flex;
 	width: 100%;

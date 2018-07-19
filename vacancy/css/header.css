@@ -1,6 +1,7 @@
 @media screen and (min-width: 320px) {
 	.header {
-		padding: 10px 0 5px;
+		padding: 10px 0;
+		background: #4CB6F8;
 	}
 
 	.headhesive {
