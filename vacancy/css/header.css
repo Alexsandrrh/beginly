@@ -10,7 +10,6 @@
 		right: 0;
 		left: 0;
 		padding: 10px 0;
-		height: 50px;
 		transform: translateY(-150%);
 		transition: .1s ease-out;
 		z-index: 5;
@@ -18,59 +17,32 @@
 		box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.26);
 	}
 
-	.headhesive .logo {
-		height: 30px;
-	}
-
-	.headhesive .photo-user {
-		width: 30px;
-		height: 30px;
-	}
-
-	.headhesive .flex-header a {
-		font-size: 13px;
-	}
-
-	.headhesive--stick {
-		transform: translateY(0);
-	}
-
-	.flex-header {
+	.mobile {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: row;
 	}
 
-	.logo {
+	.back-main {
+		margin: 0 auto;
+	}
+
+	.img img {
 		height: 40px;
 	}
 
-	.name-user {
-		display: none;
+	.back-dashboard img {
+		width: 30px;
 	}
 
-	.photo-user {
-		width: 40px;
-		height: 40px;
+	.go-user img {
+		opacity: .9;
 		border-radius: 50%;
 	}
 
-	.flex-header a {
-		outline: none;
-		font-family: 'Roboto', sans-serif;
-		font-size: 14px;
-		font-weight: 600;
-		text-transform: uppercase;
-		border-radius: 25px;
-		background: none;
-		color: #ffffff;
-	}
-
-	.semicircle {
-		width: 100%;
-		height: 220px;
-		background: #4CB6F8;
-		border-radius: 0 0 35px 35px;
+	.desktop {
+		display: none;
 	}
 }
 
@@ -80,53 +52,50 @@
 		background: #4CB6F8;
 	}
 
-	.logo {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.img img {
 		height: 35px;
 	}
 
-	.name-user {
-		display: block;
-		outline: none;
+	.back-dashboard {
+		margin-right: 20px;
+		transition: .5s ease-out;
+	}
+
+	.back-dashboard:hover {
+		margin-right: 30px;
+	}
+
+	.back-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 0 0;
+	}
+
+	.go-user {
 		font-family: 'Roboto', sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.go-user h2 {
 		font-size: 14px;
 		font-weight: 600;
 		text-transform: uppercase;
 		margin-left: 10px;
-		border-radius: 25px;
-		background: none;
 		color: #ffffff;
 	}
-
-	.photo-user {
-		width: 40px;
-		height: 40px;
-	}
-
-	.flex-header a {
-		font-size: 15px;
-		margin-left: 15px;
-	}
-
-	.headhesive {
-		height: 60px;
-	}
-
-	.headhesive .logo {
-		height: 35px;
-	}
-
-	.headhesive .photo-user {
-		width: 40px;
-		height: 40px;
-	}
-
-	.headhesive .flex-header a {
-		font-size: 14px;
-	}
-
-	.semicircle {
-		background: none;
-		height: auto;
-	}
-
 }

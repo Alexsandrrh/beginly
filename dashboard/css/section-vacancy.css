@@ -3,6 +3,11 @@
         transform: translateY(-55px);
     }
 
+    .name-price {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+    }
+
     .params-block {
         position: fixed;
         top: 0;
@@ -108,8 +113,12 @@
         border-radius: 2px;
     }
 
-    .checkbox-input[type="checkbox"]:checked + i:before {
+    .checkbox-input[type="checkbox"]:checked + .checkedbox:before {
         transform: scale(1);
+    }
+
+    .checkbox-input[type="checkbox"]:checked + .schedule-block p {
+        color: #333333;
     }
 
     .select-skill {
@@ -169,11 +178,17 @@
     /* logo company */
 
     .logo-company {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50px;
         height: 50px;
-        background: #888888;
         border-radius: 7px;
         margin-right: 10px;
+    }
+
+    .logo-company img {
+        width: 45px;
     }
 
     /* vacancy headline */
@@ -404,7 +419,6 @@
         right: 7.5px;
         height: 30px;
     }
-
 
     /* footer */
 

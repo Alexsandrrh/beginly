@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бегинли | Алекасандр Садов</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <!-- styles -->
@@ -23,9 +24,9 @@
         <header class="header">
             <div class="container">
                 <div class="flex-header">
-                    <a href="../" class="logo m-r flex flex-start"><img src="../assets/img/white.svg" class="logo"> <img
+                    <a href="../index.html" class="logo m-r flex flex-start"><img src="../assets/img/white.svg" class="logo"> <img
                             src="../assets/img/lwhite.svg" class="logo" alt=""></a>
-                    <a href="/account/user"><img src="../assets/img/2jJgQP2XQpY.jpg" class="photo-user"></a>
+                    <a href="../user/"><img src="../assets/img/2jJgQP2XQpY.jpg" class="photo-user"></a>
                     <h2 class="name-user">Привет, Александр</h2>
                 </div>
             </div>
@@ -38,7 +39,7 @@
                     <div class="flex flex-center">
                         <img src="../assets/img/main.png" alt="" class="main-poster-search">
                         <div class="input-form">
-                            <input type="text" placeholder="Я ищу ...">
+                            <input class="js-search" type="text" placeholder="Я ищу ...">
                             <img src="../assets/img/search.svg" alt="">
                         </div>
                         <img src="../assets/img/params.svg" class="search-params">
@@ -52,16 +53,16 @@
 
     <section class="section-vacancy">
         <div class="container">
-            <div class="flex-section-vacancy">
+            <div class="flex-section-vacancy js-params">
                 <div class="params-block">
                     <div class="param-price-block">
                         <h3 class="params-section-name">Зарплата</h3>
                         <div class="block-row">
                             <div class="price-input">
-                                <input type="text" placeholder="От">
+                                <input type="number" placeholder="От">
                             </div>
                             <div class="price-input">
-                                <input type="text" placeholder="До">
+                                <input type="number" placeholder="До">
                             </div>
                         </div>
                     </div>
@@ -71,7 +72,7 @@
                         <div class="block-column">
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input" onclick="CheckedFunc()">
+                                    <input type="checkbox" class="checkbox-input js-checkbox" value="Вахтовый метод">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Вахтовый метод</p>
@@ -79,7 +80,7 @@
 
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
+                                    <input type="checkbox" class="checkbox-input js-checkbox" value="Неполный день">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Неполный день</p>
@@ -87,15 +88,7 @@
 
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
-                                    <span class="checkedbox"></span>
-                                </label>
-                                <p>Полный день</p>
-                            </div>
-
-                            <div class="schedule-block">
-                                <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
+                                    <input type="checkbox" class="checkbox-input js-checkbox" value="Свободный график">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Свободный график</p>
@@ -103,7 +96,7 @@
 
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
+                                    <input type="checkbox" class="checkbox-input js-checkbox" value="Сменный график">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Сменный график</p>
@@ -111,7 +104,7 @@
 
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
+                                    <input type="checkbox" class="checkbox-input js-checkbox" value="Удаленная работа">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Удаленная работа</p>
@@ -119,7 +112,7 @@
 
                             <div class="schedule-block">
                                 <label class="checkbox">
-                                    <input type="checkbox" class="checkbox-input">
+                                    <input type="checkbox" class="checkbox-input js-checkbox" value="Любой">
                                     <span class="checkedbox"></span>
                                 </label>
                                 <p>Любой</p>
@@ -138,72 +131,33 @@
                     </div>
                     <button class="btn-release">Показать</button>
                 </div>
-                <div class="vacancies">
+                <div class="vacancies js-vacancies">
 
                     <div class="input-form-vacancy">
-                        <input type="text" placeholder="Я ищу ...">
+                        <input class="js-search" type="text" placeholder="Я ищу ...">
                         <img src="../assets/img/search.svg" alt="">
                     </div>
 
-                    <div class="vacancy">
-                        <div class="vacancy-mini-info">
-                            <div class="logo-company"></div>
-                            <div class="v-headline">
-                                <h2 class="name-vacancy">Уборщик</h2>
-                                <h3 class="name-company">Макдоналдс</h3>
-                            </div>
-                        </div>
-                        <p class="vacancy-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam consequatur cupiditate dolor doloremque earum enim iusto laboriosam maiores modi nam necessitatibus nemo quam quibusdam, repellendus sapiente vel, voluptate?</p>
-                        <div class="vacancy-btn">
-                            <a href="" class="vacancy-call">Связаться</a>
-                            <a href="../vacancy/index.html?id=25588" class="vacancy-more">Показать</a>
-                        </div>
+                    <div class="js-view-vacancies">
+
                     </div>
 
-                    <div class="vacancy">
-                        <div class="vacancy-mini-info">
-                            <div class="logo-company"></div>
-                            <div class="v-headline">
-                                <h2 class="name-vacancy">Уборщик</h2>
-                                <h3 class="name-company">Макдоналдс</h3>
-                            </div>
-                        </div>
-                        <p class="vacancy-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam consequatur cupiditate dolor doloremque earum enim iusto laboriosam maiores modi nam necessitatibus nemo quam quibusdam, repellendus sapiente vel, voluptate?</p>
-                        <div class="vacancy-btn">
-                            <a href="" class="vacancy-call">Связаться</a>
-                            <a href="" class="vacancy-more">Показать</a>
-                        </div>
-                    </div>
+                    <!--<div class="vacancy">-->
+                        <!--<div class="vacancy-mini-info">-->
+                            <!--<div class="logo-company"></div>-->
+                            <!--<div class="v-headline">-->
+                                <!--<h2 class="name-vacancy">Уборщик</h2>-->
+                                <!--<h3 class="name-company">Макдоналдс</h3>-->
+                                <!--<p class="name-price">от 15000</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<p class="vacancy-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam consequatur cupiditate dolor doloremque earum enim iusto laboriosam maiores modi nam necessitatibus nemo quam quibusdam, repellendus sapiente vel, voluptate?</p>-->
+                        <!--<div class="vacancy-btn">-->
+                            <!--<a href="" class="vacancy-call">Связаться</a>-->
+                            <!--<a href="../vacancy/index.html?id=25588" class="vacancy-more">Показать</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-                    <div class="vacancy">
-                        <div class="vacancy-mini-info">
-                            <div class="logo-company"></div>
-                            <div class="v-headline">
-                                <h2 class="name-vacancy">Уборщик</h2>
-                                <h3 class="name-company">Макдоналдс</h3>
-                            </div>
-                        </div>
-                        <p class="vacancy-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam consequatur cupiditate dolor doloremque earum enim iusto laboriosam maiores modi nam necessitatibus nemo quam quibusdam, repellendus sapiente vel, voluptate?</p>
-                        <div class="vacancy-btn">
-                            <a href="" class="vacancy-call">Связаться</a>
-                            <a href="" class="vacancy-more">Показать</a>
-                        </div>
-                    </div>
-
-                    <div class="vacancy">
-                        <div class="vacancy-mini-info">
-                            <div class="logo-company"></div>
-                            <div class="v-headline">
-                                <h2 class="name-vacancy">Уборщик</h2>
-                                <h3 class="name-company">Макдоналдс</h3>
-                            </div>
-                        </div>
-                        <p class="vacancy-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam consequatur cupiditate dolor doloremque earum enim iusto laboriosam maiores modi nam necessitatibus nemo quam quibusdam, repellendus sapiente vel, voluptate?</p>
-                        <div class="vacancy-btn">
-                            <a href="" class="vacancy-call">Связаться</a>
-                            <a href="" class="vacancy-more">Показать</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

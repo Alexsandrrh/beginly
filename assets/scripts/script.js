@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    // favicon
-    $('')
+    let helloWorld = 'Hello world';
+    console.log(helloWorld);
 });
