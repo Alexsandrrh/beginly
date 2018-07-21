@@ -16,7 +16,6 @@ $(document).ready(function () {
     console.log();
 
     $.getJSON('../assets/api.json',function (data) {
-        console.log(data);
         for (let i = 0; i < data.length; i++){
             if (id == data[i].id){
                 $('.js-vacancy').append(' <div class="desktop-employer">\n' +
@@ -29,7 +28,10 @@ $(document).ready(function () {
                     '                    <a href="tel:' + data[i].tel + '" class="contact-tel-desktop">Связаться</a>\n' +
                     '                </div>\n' +
                     '                <div class="all-info">\n' +
-                    '                    <h4 class="name-vacancy">' + data[i].name + '</h4>\n' +
+                    '                    <h4 class="name-vacancy">' + data[i].name + '</h4>' +
+                    '                    <h4 class="name-price">от ' + data[i].info.price + '.руб</h4>' +
+                    '                    <h4 class="name-price">График работы: <span>' + data[i].info.schedule + '</span></h4>' +
+                    '                    <h4 class="name-price">Опыт работы: <span>' + data[i].info.skill + '</span></h4>' +
                     '                    <h3 class="headline-info">Описание:</h3>\n' +
                     '                    <p class="info-vacancy">' + data[i].info.about + '</p>\n' +
                     '                </div>\n' +
