@@ -29,7 +29,7 @@
     }
 
     .vacancies.-active  {
-        transform: translateY(560px);
+        transform: translateY(590px);
     }
 
     .params-section-name {
@@ -145,6 +145,20 @@
         background: #4CB6F8;
         border-radius: 8px;
         cursor: pointer;
+    }
+
+    .btn-cancel {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 10px 0;
+        color: #ffffff;
+        border: none;
+        background: #FF182E;
+        border-radius: 8px;
+        cursor: pointer;
+        opacity: .7;
+        margin: 10px 0;
     }
 
     .vacancies {
@@ -356,7 +370,7 @@
         border-radius: 2px;
     }
 
-    .checkbox-input[type="checkbox"]:checked + i:before {
+    .checkbox-input[type="radio"]:checked + i:before {
         transform: scale(1);
     }
 
