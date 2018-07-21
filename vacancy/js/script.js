@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     console.log();
 
-    $.getJSON('http://localhost:63342/beginly.io/assets/api.json',function (data) {
+    $.getJSON('../assets/api.json',function (data) {
         console.log(data);
         for (let i = 0; i < data.length; i++){
             if (id == data[i].id){

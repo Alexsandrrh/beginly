@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 
     let dashboard = $('.js-view-vacancies');
-    $.getJSON("http://localhost:63342/beginly.io/assets/api.json", function (data) {
+    $.getJSON("../assets/api.json", function (data) {
         for (let i = 0; i < data.length; i++) {
             dashboard.append('<div class="vacancy">\n' +
                 '                        <div class="vacancy-mini-info">\n' +
@@ -35,6 +35,32 @@ $(document).ready(function () {
 
         console.log("Cегодня на Бегинли доступно " + data.length + " вакансий :)");
 
+
+        //params
+        $('.js-btn-release').click(function () {
+            dashboard.html('');
+            console.log($('.js-price-for').val());
+            console.log($('.js-select-skill').val());
+            for (let i = 0; i < data.length; i++){
+                if ($('.js-price-for').val() <= data[i].info.price && $('.js-select-skill').val() == data[i].info.skill) {
+                    dashboard.append('<div class="vacancy">\n' +
+                        '                        <div class="vacancy-mini-info">\n' +
+                        '                            <div class="logo-company"><img src="' + data[i].logo + '" alt=""></div>\n' +
+                        '                            <div class="v-headline">\n' +
+                        '                                <h2 class="name-vacancy">' + data[i].name + '</h2>\n' +
+                        '                                <h3 class="name-company">' + data[i].company + '</h3>\n' +
+                        '                                <p class="name-price">от ' + data[i].info.price + '.руб</p>\n' +
+                        '                            </div>\n' +
+                        '                        </div>\n' +
+                        '                        <p class="vacancy-title">' + data[i].info.about + '</p>\n' +
+                        '                        <div class="vacancy-btn">\n' +
+                        '                            <a href="tel:' + data[i].tel + '" class="vacancy-call">Связаться</a>\n' +
+                        '                            <a href="../vacancy/index.html?id=' + data[i].id + '" class="vacancy-more">Показать</a>\n' +
+                        '                        </div>\n' +
+                        '                    </div>');
+                }
+            }
+        });
 
         // search
         $('.js-search').bind('input propertychange', function () {

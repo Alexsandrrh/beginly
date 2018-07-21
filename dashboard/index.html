@@ -59,11 +59,11 @@
                         <h3 class="params-section-name">Зарплата</h3>
                         <div class="block-row">
                             <div class="price-input">
-                                <input type="number" placeholder="От">
+                                <input class="js-price-for" type="text" placeholder="От">
                             </div>
-                            <div class="price-input">
-                                <input type="number" placeholder="До">
-                            </div>
+                            <!--<div class="price-input">-->
+                                <!--<input type="number" placeholder="До">-->
+                            <!--</div>-->
                         </div>
                     </div>
 
@@ -123,14 +123,17 @@
 
                     <div class="param-skill-block">
                         <h3 class="params-section-name">Опыт работы</h3>
-                        <select class="select-skill" id="">
-                            <option value="">Не имеет значения</option>
-                            <option value="">Более 1 года</option>
-                            <option value="">Более 3 лет</option>
+                        <select class="select-skill js-select-skill" id="">
+                            <option value="Не имеет значения">Не имеет значения</option>
+                            <option value="Более 1 года">Более 1 года</option>
+                            <option value="Более 3 лет">Более 3 лет</option>
                         </select>
                     </div>
-                    <button class="btn-release">Показать</button>
+                    <button class="btn-release js-btn-release">Показать</button>
+                    <button class="js">Сброс</button>
                 </div>
+
+
                 <div class="vacancies js-vacancies">
 
                     <div class="input-form-vacancy">
