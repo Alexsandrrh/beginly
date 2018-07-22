@@ -63,6 +63,7 @@ $(document).ready(function () {
                 }
 
                 $('.js-price-for').val('');
+                params.removeClass('-active');
             });
 
             // search
