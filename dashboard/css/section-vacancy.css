@@ -148,17 +148,28 @@
     }
 
     .btn-cancel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+        background: #FF182E;
+        border: none;
+        opacity: .7;
+        margin: 10px 0;
+    }
+
+    .btn-cancel p {
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
         font-weight: 700;
         padding: 10px 0;
         color: #ffffff;
-        border: none;
-        background: #FF182E;
-        border-radius: 8px;
-        cursor: pointer;
-        opacity: .7;
-        margin: 10px 0;
+    }
+
+    .btn-cancel img{
+        height: 15px;
+        margin-left: 10px;
     }
 
     .vacancies {
