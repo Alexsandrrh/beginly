@@ -13,7 +13,7 @@ $(document).ready(function () {
         return vars;
     }
 
-    console.log();
+    console.log(id);
 
     $.getJSON('../assets/api.json',function (data) {
         for (let i = 0; i < data.length; i++){
